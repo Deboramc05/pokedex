@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+   font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #f6f8fc;
+}
+
+a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.title header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+
+}
+.title img {
+   width: 2rem;
+   height: 2rem;
+}
+
+.content {
+   width: 100vw;
+   height: 100vh;
+   padding: 1rem;
+   background-color: #f92e4e;
+}
+
+.content header {
+   background-color:#f92e4e;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border-radius: 10px;
+   
+}
+
+.content header h1 {
+   color: #e7bd0f;
+   font-size: 3.2rem;
+   line-height: 5rem;
+   text-shadow: #2c5da4 0.1rem 0.1rem 0.2rem;
+   filter: brightness(1.1);
+  
+    
+   
+}
+
+.content header .title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.content header .title,
+.content header #change-theme-button {
+   margin: 20px;
+}
+
+.content header .title .logo,
+.content header .button-image {
+   width: 30px;
+   height: 30px;
+   
+}
+
+.content header .button-image {
+   transition: 0.2s ease-in-out;
+}
+
+.content header #change-theme-button {
+   background: none;
+   border: none;
+}
+
+.content header .logo:hover,
+.content header .button-image:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+@media screen and (min-width: 350px) and (max-width: 576px) {
+   body.dark-mode main {
+      background-color: #2b2b2b;
+   }
+}
+
+@media screen and (min-width: 992px) {
+   body.dark-mode {
+      background-color: #212121;
+      color: #f5f5f5;
+   }
+
+   .content {
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
+   }
+}
